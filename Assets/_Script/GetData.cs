@@ -4,31 +4,40 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GetData : MonoBehaviour {
+public class GetData : MonoBehaviour
+{
 
     [SerializeField]
     Text lblName, lblAge;
-    
+
     SendText sendText;
 
-    string _nameDisplay, _ageDisplay;
+    static string _nameDisplay, _ageDisplay;
+    static string nameDisplay
+    {
+        get { return _nameDisplay; }
+        set { _nameDisplay = value; }
+    }
+
+    static string ageDisplay
+    {
+        get { return _ageDisplay; }
+        set { _ageDisplay = value; }
+    }
 
     private void Start()
     {
         //get name and age
-        try
-        {
-            //put codes here.....
 
+        //put codes here.....
+        nameDisplay = SendText.sendingText.NameIs;
+        ageDisplay = SendText.sendingText.AgeIs;
 
-        } catch (Exception huehue) { Debug.Log(huehue); }
         //put it here
-        try
-        {
-            lblName.text = "Da Name: " + _nameDisplay;
-            lblAge.text = "Da Age: " + _ageDisplay;
-        }
-        catch (Exception except) { Debug.Log(except); }
+        lblName.text = "Da Name: " + _nameDisplay;
+        lblAge.text = "Da Age: " + ageDisplay;
+
+        //waow, success....
 
     }
 

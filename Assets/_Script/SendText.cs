@@ -12,6 +12,13 @@ public class SendText : MonoBehaviour {
 
     protected string _Name, _Age;
 
+    public static SendText sendingText;
+
+    private void Awake()
+    {
+        sendingText = this;
+    }
+
     //for neater way
     protected string testNeat
     {
