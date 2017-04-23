@@ -1,17 +1,30 @@
 # GetterSetterUnityTest
 "passing values to other scene and other class" in the nutshell
 
-<s>Never thought of that</s>
+-----------
 
-i was mindblowing myself there.... O_O
+## Singleton
 
-just look at Asset/_Script/
+is available in Assets/_script/V2
 
-lemme rest for a bit.....
+------------
 
-i'll search another way to pass that "eco-friendly"-ly, i mean.....not using a single public variable
+## Task:
+
+- [x] "eco-friendly" code, i mean not put something directly
+- [x] ~~singularity~~ Singleton
+- [x] Finished, see you next time.....
 
 ---------------
 
-reference:
-https://forum.unity3d.com/threads/c-communication-between-scripts.178309/
+## Just a Reminder:
+
+If there's any issue just tell me,
+
+if not, please enjoy lol
+
+-------------------
+
+### reference:
+
+- https://forum.unity3d.com/threads/c-communication-between-scripts.178309/
